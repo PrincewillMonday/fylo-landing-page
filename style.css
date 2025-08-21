@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    width: 100vw;
+}
+
+main {
+    width: 100%;
+    background: white;
+}
+
+h1, p {
+    color: hsl(243, 87%, 12%);
+}
+
+/* Logo Section*/
+.logo-div img {
+    cursor: pointer;
+}
+
+/* Nav Section */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 4em 0;
+}
+
+.nav-features ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 4em 0;
+}
+
+.hero-section .hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    width: 15em;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    width: 30em;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.hero-section .btn-div {
+    display: flex;
+    gap: 0.5em;
+    width: 90%;
+}
+
+.btn-div .input-div {
+    width: 60%;
+    border: none;
+}
+
+.btn-div .get-div {
+    width: 40%;
+}
+
+.btn-div input {
+    padding: 0.4em 0.5em;
+    width: 100%;
+    outline: none;
+    border: solid 2px hsl(0, 0%, 75%);
+}
+
+.btn-div button {
+    background: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    padding: 0.5em 3em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-div button:active {
+    background: hsl(224, 81%, 23%);
+}
+
+.hero-section .hero-img {
+    width: 50%;
+}
+.hero-img img {
+    width: 100%;
+}
+
+/* Productive Section */
+.productive {
+    width: 100%;
+    margin-top: 4em;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8em 4em 4em;
+}
+
+.productive .productive-content {
+    width: 50%;
+}
+
+.productive-content h1 {
+    font-size: 2rem;
+    width: 20em;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+.productive-content p {
+    width: 32em;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+/* For fylo link */
+.productive-content .fylo-link {
+    display: flex;
+    align-items: center;
+}
+
+.fylo-link a {
+    color: hsl(168, 63%, 46%);
+}
+
+.fylo-link img {
+    width: 80%;
+    cursor: pointer;
+}
+
+/* For Testimony */
+.productive-content .testimony {
+    background: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    width: 60%;
+    padding: 2em;
+    margin-top: 3em;
+}
+
+.testimony .quote {
+    width: 10%;
+}
+
+.testimony p {
+    width: 20em;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.testimony .client {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.client .client-img-div {
+    width: 20%;
+}
+
+.client-img-div img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.client .details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.details p {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.details span {
+    font-size: 10px;
+}
+
+.productive .productive-img {
+    width: 50%;
+}
+
+.productive-img img {
+    width: 100%;
+}
+
+/* Get Section */
+.get {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    background: hsl(238, 22%, 44%);
+}
+
+.get .get-content {
+    width: 50%;
+}
+
+.get-content h1 {
+    font-size: 1.6rem;
+    color: hsl(240, 75%, 98%);
+    width: 20em;
+    line-height: 1.2;
+    margin-bottom: 0.9em;
+}
+
+.get-content p {
+    width: 30em;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: hsl(240, 75%, 98%);
+}
+
+.get .get-form {
+    width: 50%;
+}
+
+.get-form input {
+    padding: 0.5em;
+    width: 80%;
+    margin-bottom: 1em;
+    border-radius: 3px;
+    outline: none;
+    border: solid 2px hsl(0, 0%, 75%);
+}
+
+.get-form button {
+    padding: 0.5em;
+    width: 40%;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+}
+
+.get-form button:active {
+    background: hsl(224, 81%, 23%);
+}
+
+/* Foter Section */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    background: hsl(243, 87%, 12%);
+}
+
+footer .footer-logo {
+    width: 20%;
+    filter: invert(50%);
+    margin-bottom: 2.5em;
+}
+
+footer p {
+    color: hsl(240, 75%, 98%);
+    font-weight: lighter;
+}
+
+footer .footer-content {
+    display: flex;
+    gap: 8em;
+}
+
+.footer-content .phone {
+    display: flex;
+    gap: 1em;
+}
+
+.contacts .phone {
+    margin-bottom: 0.5em;
+}
+
+.info1 p {
+    margin-bottom: 0.5em;
+}
+
+.info2 p {
+    margin-bottom: 0.5em;
+}
+
+.footer-content .email {
+    display: flex;
+    gap: 1em;
+}
+
+.footer-content .icon {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 0;
+}
+
+.icon img {
+    width: 11%;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+/* Tablet Screen responsiveness */
+@media (max-width: 768px) {
+    /* Logo Section*/
+    .logo-div img {
+        width: 70%;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-section .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-section .hero-img {
+        margin-top: 5em;
+        width: 70%;
+    }
+
+    /* Productive Section */
+    .productive {
+        flex-direction: column;
+    }
+
+    .productive .productive-content {
+        width: 100%;
+    }
+
+    .productive-content p {
+        width: 35em;
+        font-size: 0.9rem;
+    }
+
+    /* For Testimony */
+    .productive-content .testimony {
+        width: 55%;
+    }
+
+    .testimony p {
+        width: 20em;
+        font-size: 0.9rem;
+    }
+
+    .productive .productive-img {
+        margin-top: 5em;
+        width: 70%;
+    }
+
+    /* Get Section */
+    .get-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .get-content p {
+        width: 20em;
+        font-size: 0.8rem;
+    }
+
+    .get-form input {
+        padding: 0.5em;
+        width: 100%;
+    }
+
+    .get-form button {
+        width: 70%;
+    }
+
+    .get-form button:active {
+        background: hsl(224, 81%, 23%);
+    }
+
+    /* Foter Section */
+    footer .footer-content {
+        gap: 6em;
+        font-size: 0.5rem;
+    }
+
+    .icon img {
+        width: 15%;
+    }
+}
+
+@media (max-width:426px){
+    /* Logo Section*/
+    .logo-div img {
+        width: 50%;
+    }
+
+    /* Nav Section */
+    .nav {
+        padding: 1em;
+    }
+
+    .nav-features ul {
+        gap: 2em;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .hero-section .hero-content {
+        order: 2;
+        margin-top: 2em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.7rem;
+        width: 13em;
+        text-align: center;
+    }
+
+    .hero-content p {
+        width: 20em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .hero-section .hero-img {
+        margin-top: 0;
+        width: 100%;
+        order: 1;
+    }
+
+    .hero-section .btn-div {
+        flex-direction: column;
+        gap: 0.7em;
+        width: 100%;
+    }
+
+    .btn-div .input-div {
+        width: 100%;
+    }
+
+    .btn-div .get-div {
+        width: 100%;
+    }
+
+    .btn-div input {
+        width: 100%;
+        padding: 1em 1em;
+    }
+
+    .btn-div button {
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    /* Productive Section */
+    .productive {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .productive .productive-content {
+        width: 100%;
+        order: 2;
+        margin-bottom: 4em;
+    }
+
+    .productive-content h1 {
+        font-size: 1.4rem;
+        width: 17em;
+    }
+
+    .productive-content p {
+        width: 22em;
+        font-size: 1rem;
+    }
+
+    /* For fylo link */
+    .productive-content .fylo-link {
+        justify-content: center;
+    }
+
+    .fylo-link a {
+        color: hsl(168, 63%, 46%);
+    }
+
+    /* For Testimony */
+    .productive-content .testimony {
+        width: 100%;
+    }
+
+    .testimony .quote {
+        width: 8%;
+    }
+
+    .testimony p {
+        width: 21em;
+        font-size: 0.9rem;
+    }
+
+    .details p {
+        font-size: 13px;
+    }
+
+    .details span {
+        font-size: 11px;
+    }
+
+    .productive .productive-img {
+        width: 100%;
+        order: 1;
+        margin-bottom: 4em;
+    }
+
+    /* Get Section */
+    .get {
+        padding: 2em;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .get .get-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .get-content h1 {
+        font-size: 1.3rem;
+        width: 11em;
+    }
+
+    .get-content p {
+        width: 19em;
+        font-size: 0.9rem;
+    }
+
+    .get .get-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .get-form input {
+        width: 70%;
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+    }
+
+    .get-form button {
+        width: 70%;
+    }
+
+    /* Foter Section */
+    footer {
+        padding: 4em 2em;
+    }
+
+    footer .footer-logo {
+        width: 60%;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content .phone {
+        display: flex;
+        gap: 1em;
+    }
+
+    .contacts .phone {
+        margin-bottom: 1em;
+    }
+
+    .info1 p {
+        margin-bottom: 1em;
+    }
+
+    .info2 p {
+        margin-bottom: 1em;
+    }
+
+    .footer-content .icon {
+        width: 10%;
+        width: 100%;
+    }
+
+    .icon img {
+        width: 9%;
+    }
+
+}
